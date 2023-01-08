@@ -1,0 +1,53 @@
+{
+  "name": "@magic-modules/p",
+  "version": "0.0.1",
+  "author": "Wizards & Witches",
+  "homepage": "https://magic-modules.github.io/p/",
+  "license": "AGPL-3.0",
+  "description": "@magic P module. receives string or array of strings and wraps them in one or more p elements.",
+  "main": "src/index.mjs",
+  "type": "module",
+  "engines": {
+    "node": ">=14.15.4"
+  },
+  "engineStrict": true,
+  "scripts": {
+    "start": "t -p",
+    "format": "f -w --exclude docs",
+    "test": "t --exclude docs example config.js",
+    "build": "NODE_ENV=production magic build",
+    "prod": "NODE_ENV=production magic build serve --watch src",
+    "dev": "magic dev --watch src",
+    "calls": "calls"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magic-modules/p.git"
+  },
+  "bugs": {
+    "url": "https://github.com/magic-modules/p/issues"
+  },
+  "devDependencies": {
+    "@magic-modules/light-switch": "0.0.11",
+    "@magic-modules/no-spy": "0.0.8",
+    "@magic-modules/pre": "0.0.11",
+    "@magic-themes/docs": "0.0.14",
+    "@magic/core": "0.0.144",
+    "@magic/format": "0.0.48",
+    "@magic/test": "0.2.14"
+  },
+  "keywords": [
+    "magic",
+    "module",
+    "paragraphs"
+  ],
+  "contributors": [
+    {
+      "name": "jascha ehrenreich",
+      "github": "jaeh"
+    }
+  ]
+}
